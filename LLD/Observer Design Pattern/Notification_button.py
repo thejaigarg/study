@@ -1,3 +1,4 @@
+#Interface
 class Subject:
     def __init__(self):
         self.observers = []
