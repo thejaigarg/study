@@ -1,0 +1,54 @@
+Observer Design Pattern
+
+### What is Observer Design Pattern?
+Observer pattern defines a one-to-many relationship between objects. When one object (subject) changes its state, all of its dependent objects (observers) are automatically notified and updated.
+
+Simple words: "When one object changes, other objects are notified automatically."
+
+---
+
+### Important Concepts:
+1. **Subject:** object that maintains observers and sends notifications.
+2. **Observer:** object that waits to be notified of changes in subject.
+
+---
+
+### Real-world Example:
+When you subscribe to a YouTube channel, you get notifications when new videos are released. Here,  
+- **YouTube channel** is the **subject**  
+- **Subscribers** are the **observers**.
+
+
+**Output:**
+```
+Alice got notified with message: 'New video available!'
+Bob got notified with message: 'New video available!'
+Alice got notified with message: 'Another video posted!'
+```
+
+---
+
+### Advantages:
+- Decouples the subject & observers (reduces dependency).
+- Open/Closed Principle: You can add or remove observers at any time without changing the subject.
+
+---
+
+### When to use (Interview Answer):
+- When you have one-to-many dependency among objects.
+- When updating one object requires updating others automatically.
+
+---
+
+### Short notes (Summary):
+- Observer Pattern: **One subject, many observers.**
+- Key concept: **Auto notifications** when a subject's state changes.
+- Decoupled components: easy to maintain and extend.
+- Example: Youtube channel subscription.
+
+---
+
+### Simple Explanation of Terms:
+- **Subject:** The main object whose changes we want to track.
+- **Observer:** The objects interested in knowing the state changes in the Subject.
+- **Notify:** To inform observers automatically about something changed.

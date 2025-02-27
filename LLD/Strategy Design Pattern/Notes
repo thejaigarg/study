@@ -1,0 +1,60 @@
+Strategy Design Pattern (Python)
+**What is Strategy Design Pattern?**
+Strategy Design Pattern lets you define different algorithms separately and makes them interchangeable. In simple words, it helps you dynamically select the behavior of an object at runtime without affecting the class structure.
+**Why do we use it?**
+- Avoid lots of conditional statements.
+- Easily swap different algorithms at runtime.
+- Improve readability and maintainability of code.
+- Follow the Open/Closed principle from SOLID design principles (open for extension, closed for modification).
+---
+### Important Terms in Strategy Pattern
+- **Context:** The object that uses a certain strategy. It maintains a reference to a strategy instance and delegates the execution to it.
+- **Strategy:** Interface (common structure) defining the method(s) the different algorithms share.
+- **ConcreteStrategy:** Class implementing a specific variation of the algorithm.
+---
+### Example (with simple Python code):
+Consider a basic example: calculating discounts for a shopping cart. The discount algorithm could vary as per different customer types (Regular, Premium, VIP). Instead of writing multiple if-conditions, we use the strategy pattern.
+```python
+# Strategy (Interface)
+from abc import ABC, abstractmethod
+class DiscountStrategy(ABC):
+@abstractmethod
+def apply_discount(self, price):
+pass
+# Concrete Strategies
+class NoDiscount(DiscountStrategy):
+def apply_discount(self, price):
+return price
+class RegularDiscount(DiscountStrategy):
+def apply_discount(self, price):
+return price * 0.9 # 10% discount
+class VIPDiscount(DiscountStrategy):
+def apply_discount(self, price):
+return price * 0.7 # 30% discount
+# Context
+class ShoppingCart:
+def __init__(self, discount_strategy: DiscountStrategy):
+self.discount_strategy = discount_strategy
+def get_final_price(self, price):
+return self.discount_strategy.apply_discount(price)
+# Usage
+cart_regular = ShoppingCart(RegularDiscount())
+print(cart_regular.get_final_price(100)) # Output: 90.0
+cart_vip = ShoppingCart(VIPDiscount())
+print(cart_vip.get_final_price(100)) # Output: 70.0
+cart_none = ShoppingCart(NoDiscount())
+print(cart_none.get_final_price(100)) # Output: 100
+```
+---
+### Short Notes (Important points for Interview):
+- Strategy pattern helps to use interchangeable algorithms at runtime.
+- Eliminates large conditional blocks (if-else).
+- Makes the system easily extendable with extra strategies.
+- Example scenarios: payment gateways, discount strategies, sorting algorithms.
+- Follows Open/Closed Principle (open for extension, closed for modifications).
+---
+### Simplified Definitions of Terms:
+- **Context:** Class containing logic, chooses the appropriate strategy to execute the algorithm.
+- **Strategy:** Interface with a common method(s) all other strategy classes must implement.
+- **ConcreteStrategy:** Class implementing a specific strategy algorithm.
+
