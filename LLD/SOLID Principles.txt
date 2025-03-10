@@ -1,0 +1,5 @@
+S- Single Responsiblity
+O- Open/Closed
+L- Liskov Substitution: If S is a subtype of T, then objects of type T in a program may be replaced with objects of type S without altering any of the desirable properties of that program.
+I- Interface Segregation: Clients should not be forced to depend on methods that they do not use.
+D- Dependency Inversion: - High-level modules should not depend on low-level modules. Both should depend on the abstraction.

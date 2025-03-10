@@ -1,0 +1,200 @@
+Low level Design
+
+⚙️ CREATIONAL PATTERNS
+
+1. Singleton
+Easy:
+- Design Logging Framework
+- Design Traffic Signal Control System
+Medium:
+- Design Cache using LRU Eviction Policy
+Hard:
+(None explicitly identified under Singleton)
+
+2. Factory Method / Abstract Factory
+Easy:
+- Design Coffee Vending Machine
+- Design a Vending Machine
+Medium:
+- Design Restaurant Management System
+- Design Hotel Management System
+- Design Airline Management System
+Hard: 
+- Design Online Shopping System like Amazon 
+- Design Movie Ticket Booking System 
+- Design Online Food Delivery Service (like Swiggy)
+
+3. Builder 
+Easy: 
+(None explicitly identified under Builder)
+Medium: 
+- Design Car Rental System 
+- Design Digital Wallet System 
+Hard: 
+- Design Online Stock Brokerage System (complex trading orders)
+
+4. Prototype 
+Easy: 
+- Design Task Management System 
+Medium: 
+- Design a Social Network like Facebook 
+- Design LinkedIn 
+Hard: 
+(None explicitly identified under Prototype)
+
+
+⚙️ STRUCTURAL PATTERNS
+
+1. Adapter 
+Easy: 
+(None explicitly identified under Adapter)
+Medium: 
+- Design Airline Management System (third-party APIs integration) 
+- Design Hotel Management System (third-party reservation integration) 
+Hard: 
+- Design Ride-Sharing Service (like Uber) (location/navigation APIs integration) 
+
+2. Bridge 
+Easy: 
+- Design Logging Framework (log writer implementations)
+Medium: 
+(None explicitly identified under Bridge)
+Hard: 
+- Design Music Streaming Service 
+
+3. Composite 
+Easy: 
+- Design Stack Overflow (comments/questions/answers) 
+Medium: 
+- Design Restaurant Management System (menu items/categories) 
+Hard: 
+(None explicitly identified under Composite)
+
+4. Decorator 
+Easy: 
+- Design Coffee Vending Machine (extra toppings/options dynamically)
+Medium: 
+(None explicitly identified under Decorator)
+Hard: 
+- Design Online Food Delivery Service (like Swiggy) (dynamic food customization)
+
+5. Facade 
+Easy: 
+- Design an ATM (interface to complex banking operations) 
+Medium: 
+- Design Restaurant Management System (ordering interface) 
+- Design Hotel Management System (front booking interface)
+Hard: 
+- Design Online Shopping System (Amazon) (user/product/payment interface simplifications) 
+
+6. Flyweight 
+Easy: 
+(None explicitly identified under Flyweight)
+Medium: 
+(None explicitly identified under Flyweight)
+Hard: 
+- Design Chess Game (shared piece representations) 
+- Design CricInfo (shared statistics) 
+- Design Music Streaming Service (shared song metadata)
+
+7. Proxy 
+Easy: 
+(None explicitly identified under Proxy)
+Medium: 
+(None explicitly identified under Proxy)
+Hard: 
+- Design Online Shopping System (Authorized access, caching, lazy loading) 
+- Design Music Streaming Service (caching/proxy servers)
+
+
+⚙️ BEHAVIORAL PATTERNS
+
+1. Chain of Responsibility 
+Easy: 
+- Design Logging Framework (loggers prioritization) 
+Medium: 
+- Design an ATM (money dispense system)
+Hard: 
+(None explicitly identified under Chain of Responsibility)
+
+2. Command 
+Easy: 
+- Design Task Management System (execute/delete tasks)
+Medium: 
+- Design Restaurant Management System (order processing) 
+Hard: 
+- Design Online Stock Brokerage System (placing/canceling orders)
+
+3. Iterator 
+Easy: 
+(None explicitly identified under Iterator)
+Medium: 
+- Design Library Management System (iterate through book catalog)
+Hard: 
+- Design Music Streaming Service (playlists/song iterations)
+
+4. Mediator 
+Easy: 
+(None explicitly identified under Mediator)
+Medium: 
+- Design Pub Sub System (central mediator handles messages/events) 
+Hard: 
+- Design Airline Management System (coordinate flights, bookings centrally)
+
+5. Memento 
+Easy: 
+(None explicitly identified under Memento)
+Medium: 
+(None explicitly identified under Memento)
+Hard: 
+- Design Chess Game (undo moves/state storage) 
+- Design Snake and Ladder game (state saving/restoring)
+
+6. Observer 
+Easy: 
+(None explicitly identified under Observer explicitly)
+Medium: 
+- Design Pub Sub System (notify subscribers) 
+- Design Elevator System (notify floors/display unit)
+Hard: 
+- Design CricInfo (live score updates/broadcasts) 
+- Design Online Stock Brokerage System (notify price change subscribers) 
+- Design Music Streaming Service (notify users on song updates)
+
+7. State 
+Easy: 
+- Design Vending Machine (state changing upon actions)
+- Design Coffee Vending Machine (state changes)
+- Design Traffic Signal Control System (state transitions)
+Medium: 
+- Design Elevator System (state changing—up, down, idle, maintenance)
+Hard: 
+(None explicitly identified under State)
+
+8. Strategy 
+Easy: 
+(None explicitly identified under Strategy)
+Medium: 
+- Design Car Rental System (pricing models/policies) 
+- Design Cache using LRU Eviction Policy (switchable policies)
+Hard: 
+- Design Ride-Sharing Service (like Uber) (fare calculation strategies dynamically)
+
+9. Template Method 
+Easy: 
+(None explicitly identified under Template Method)
+Medium: 
+- Design Hotel Management System (reservation/checkout processes) 
+- Design Concert Ticket Booking System (steps of booking tickets)
+Hard: 
+- Design Online Shopping System (steps to buy)
+
+10. Visitor 
+Easy: 
+(None explicitly identified under Visitor)
+Medium: 
+- Design a Social Network like Facebook (analytics/statistics visitor) 
+- Design LinkedIn (profile analytics/report data)
+Hard: 
+- Design Online Shopping System like Amazon (pricing/offers)
+ 

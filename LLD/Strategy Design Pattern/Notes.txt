@@ -1,4 +1,5 @@
 Strategy Design Pattern (Python)
+
 **What is Strategy Design Pattern?**
 Strategy Design Pattern lets you define different algorithms separately and makes them interchangeable. In simple words, it helps you dynamically select the behavior of an object at runtime without affecting the class structure.
 **Why do we use it?**
