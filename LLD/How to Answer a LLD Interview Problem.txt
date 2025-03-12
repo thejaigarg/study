@@ -1,0 +1,24 @@
+Step 1: Clarify Requirements
+Step 2: Identify Entities
+    Example:
+        1. User: Represents a person who interacts with the system.
+        2. Question: Represents a question posted by a user.
+        3. Answer: Represents an answer to a question.
+        4. Comment: Represents a comment on a question or an answer.
+        5. Tag: Represents a tag that can be applied to questions.
+        6. Vote: Represents a vote on a question or answer.
+Step 3: Class Design
+    3.1 Define classes and relationships
+        In our Stack Overflow example, here are some of the relationships between classes:
+        A User can ask many Questions, provide many Answers and add many Comments.
+        A Question can have many Answers, Comments, Tags and Votes.
+        An Answer can have many Comments and Votes.
+        A Comment is composed within a Question or an Answer.
+        A Tag is composed within a Question.
+    3.2 Define interfaces and core methods
+    3.3 Define a central class
+Step 4: Implementation
+    4.1 Follow good coding practices
+    4.2 Implement necessary methods
+    4.3 Address concurrency
+Step 5: Exception Handling
